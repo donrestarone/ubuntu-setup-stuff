@@ -1,0 +1,3 @@
+install terminator 
+install tmux 
+install i3 (window manager)
