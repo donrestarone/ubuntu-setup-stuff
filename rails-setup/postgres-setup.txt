@@ -1,0 +1,11 @@
+install postgres => 
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib libpq-dev
+
+create a new database user => 
+sudo -u postgres createuser -s testUser
+
+to get into postgres console => sudo -u postgres psql
+
+in postgres console set the password for the user => 
+\password testUser
