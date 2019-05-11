@@ -1,0 +1,15 @@
+generate an ssh key that corresponds with your github email address 
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+hit enter to create it in the default file path, then enter a passphrase
+
+add the ssh key to ssh-agent => first start ssh agent and then add ssh private key to ssh agent
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+install xclip && copy the ssh key to clipboard =>
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+
+paste that on to ssh/pgp keys on github
