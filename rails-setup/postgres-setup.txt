@@ -9,3 +9,11 @@ to get into postgres console => sudo -u postgres psql
 
 in postgres console set the password for the user => 
 \password testUser
+
+==connect to rails==
+
+in database.yml =>>
+    add this under the development section 
+    host: localhost
+    username: testUser
+    passoword: testUserPassword
